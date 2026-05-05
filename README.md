@@ -59,15 +59,23 @@ Em breve adicionarei aqui meus principais projetos de desenvolvimento web e cibe
 
 ## 📊 Estatísticas do GitHub
 
-<p align="center">
-  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=lrodriguesgustavo-tech&show_icons=true&theme=tokyonight&hide_border=true"/>
-</p>
+<div align="center">
 
-<p align="center">
+  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=lrodriguesgustavo-tech&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"/>
+
   <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=lrodriguesgustavo-tech&layout=compact&theme=tokyonight&hide_border=true"/>
-</p>
+
+</div>
 
 ---
+
+## 🔥 Sequência de contribuições
+
+<div align="center">
+
+  <img src="https://streak-stats.demolab.com?user=lrodriguesgustavo-tech&theme=tokyonight&hide_border=true"/>
+
+</div>
 
 ## 📫 Contato
 
