@@ -1,7 +1,7 @@
 <h1 align="center">👋 Olá, eu sou o Luis Gustavo</h1>
 
 <p align="center">
-  <strong>Desenvolvedor em formação | Cibersegurança & Desenvolvimento</strong>
+  💻 Desenvolvedor em formação | 🛡️ Cibersegurança & Desenvolvimento
 </p>
 
 <p align="center">
@@ -10,33 +10,36 @@
   </a>
 </p>
 
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=00F7FF&center=true&vCenter=true&width=435&lines=Desenvolvedor+em+forma%C3%A7%C3%A3o;Focado+em+Ciberseguran%C3%A7a;Construindo+projetos+reais" />
+</p>
+
 ---
 
 ## 🚀 Sobre mim
 
-Sou estudante de Tecnologia da Informação e Técnico em Informática em formação, com foco em desenvolvimento web e cibersegurança.
+🎓 Estudante de Tecnologia da Informação  
+💻 Técnico em Informática em formação  
+🛡️ Focado em desenvolvimento web e cibersegurança  
 
-Atualmente estou estudando e construindo projetos com:
+Atualmente desenvolvendo projetos com:
 
-- HTML
-- CSS
-- JavaScript
-- Python
-- SQL
-- Segurança da Informação
+- HTML • CSS • JavaScript  
+- Python  
+- SQL  
+- Segurança da Informação  
 
-Meu objetivo é conquistar minha primeira oportunidade na área de tecnologia, aplicando meus conhecimentos em projetos reais e evoluindo profissionalmente.
+🎯 Objetivo: conquistar minha primeira oportunidade na área de tecnologia e evoluir constantemente.
 
 ---
 
-## 🛠️ Tecnologias e ferramentas
+## 🛠️ Tecnologias
 
-<p>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=database&logoColor=white"/>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,python,sqlite" />
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/Cibersegurança-111827?style=for-the-badge&logo=hackthebox&logoColor=00FF99"/>
 </p>
 
@@ -44,38 +47,41 @@ Meu objetivo é conquistar minha primeira oportunidade na área de tecnologia, a
 
 ## 📚 Atualmente estudando
 
-- Desenvolvimento Web
-- Cibersegurança
-- Segurança da Informação
-- Python
-- Banco de Dados SQL
-- Boas práticas de proteção de dados
+- 🔐 Cibersegurança  
+- 🌐 Desenvolvimento Web  
+- 🧠 Segurança da Informação  
+- 🐍 Python  
+- 🗄️ Banco de Dados (SQL)  
 
 ---
 
 ## 📌 Projetos em destaque
 
-Em breve adicionarei aqui meus principais projetos de desenvolvimento web e cibersegurança.
+🚧 Em desenvolvimento...
+
+- Sistema de cadastro de clientes  
+- Página de portfólio profissional  
+- Checklist de segurança digital  
+- Sistema financeiro com HTML, CSS e JavaScript  
+
+---
 
 ## 📊 Estatísticas do GitHub
 
-<div align="center">
-
+<p align="center">
   <img height="160em" src="https://github-readme-stats.vercel.app/api?username=lrodriguesgustavo-tech&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"/>
-
   <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=lrodriguesgustavo-tech&layout=compact&theme=tokyonight&hide_border=true"/>
-
-</div>
+</p>
 
 ---
 
 ## 🔥 Sequência de contribuições
 
-<div align="center">
-
+<p align="center">
   <img src="https://streak-stats.demolab.com?user=lrodriguesgustavo-tech&theme=tokyonight&hide_border=true"/>
+</p>
 
-</div>
+---
 
 ## 📫 Contato
 
