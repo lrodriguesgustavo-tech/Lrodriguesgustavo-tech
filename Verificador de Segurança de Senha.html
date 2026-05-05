@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verificador de Segurança de Senha</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #020617, #0f172a, #111827);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      background: rgba(15, 23, 42, 0.95);
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    }
+
+    .icon {
+      font-size: 42px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #94a3b8;
+      font-size: 14px;
+      margin-bottom: 25px;
+      line-height: 1.5;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #cbd5e1;
+      font-size: 14px;
+    }
+
+    .password-box {
+      display: flex;
+      gap: 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px;
+      border-radius: 12px;
+      border: 1px solid #334155;
+      background: #020617;
+      color: #fff;
+      outline: none;
+      font-size: 15px;
+    }
+
+    input:focus {
+      border-color: #38bdf8;
+      box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+    }
+
+    button {
+      border: none;
+      border-radius: 12px;
+      padding: 0 14px;
+      background: #2563eb;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    .strength-area {
+      margin-top: 22px;
+    }
+
+    .strength-title {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      margin-bottom: 8px;
+      color: #cbd5e1;
+    }
+
+    .bar {
+      height: 12px;
+      width: 100%;
+      background: #1e293b;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      width: 0%;
+      background: #ef4444;
+      border-radius: 999px;
+      transition: 0.4s ease;
+    }
+
+    .result {
+      margin-top: 18px;
+      padding: 14px;
+      border-radius: 12px;
+      background: #020617;
+      border: 1px solid #334155;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .checklist {
+      margin-top: 20px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .item {
+      background: rgba(2, 6, 23, 0.7);
+      border: 1px solid #334155;
+      padding: 12px;
+      border-radius: 12px;
+      color: #cbd5e1;
+      font-size: 14px;
+    }
+
+    .valid {
+      border-color: rgba(34, 197, 94, 0.6);
+      color: #22c55e;
+    }
+
+    .invalid {
+      border-color: rgba(239, 68, 68, 0.6);
+      color: #f87171;
+    }
+
+    .tip {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #94a3b8;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    footer {
+      margin-top: 22px;
+      text-align: center;
+      color: #64748b;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="icon">🛡️</div>
+
+    <h1>Verificador de Senha Segura</h1>
+
+    <p class="subtitle">
+      Digite uma senha e veja em tempo real se ela segue boas práticas básicas de cibersegurança.
+    </p>
+
+    <label for="password">Digite sua senha:</label>
+
+    <div class="password-box">
+      <input type="password" id="password" placeholder="Ex: Senha@123" />
+      <button onclick="togglePassword()">👁️</button>
+    </div>
+
+    <div class="strength-area">
+      <div class="strength-title">
+        <span>Força da senha</span>
+        <span id="strengthText">Nenhuma</span>
+      </div>
+
+      <div class="bar">
+        <div class="bar-fill" id="barFill"></div>
+      </div>
+    </div>
+
+    <div class="result" id="result">
+      Digite uma senha para iniciar a análise.
+    </div>
+
+    <div class="checklist">
+      <div class="item invalid" id="length">❌ Pelo menos 8 caracteres</div>
+      <div class="item invalid" id="uppercase">❌ Letra maiúscula</div>
+      <div class="item invalid" id="lowercase">❌ Letra minúscula</div>
+      <div class="item invalid" id="number">❌ Número</div>
+      <div class="item invalid" id="symbol">❌ Símbolo especial</div>
+    </div>
+
+    <p class="tip">
+      Dica: uma senha forte deve misturar letras maiúsculas, minúsculas, números e símbolos.
+    </p>
+
+    <footer>
+      Projeto desenvolvido com HTML, CSS e JavaScript. Feito por Luis Gustavo Rodrigues Silva
+    </footer>
+  </div>
+
+  <script>
+    const passwordInput = document.getElementById("password");
+    const barFill = document.getElementById("barFill");
+    const strengthText = document.getElementById("strengthText");
+    const result = document.getElementById("result");
+
+    const checks = {
+      length: document.getElementById("length"),
+      uppercase: document.getElementById("uppercase"),
+      lowercase: document.getElementById("lowercase"),
+      number: document.getElementById("number"),
+      symbol: document.getElementById("symbol")
+    };
+
+    passwordInput.addEventListener("input", checkPassword);
+
+    function checkPassword() {
+      const password = passwordInput.value;
+      let score = 0;
+
+      const hasLength = password.length >= 8;
+      const hasUppercase = /[A-Z]/.test(password);
+      const hasLowercase = /[a-z]/.test(password);
+      const hasNumber = /[0-9]/.test(password);
+      const hasSymbol = /[^A-Za-z0-9]/.test(password);
+
+      updateCheck(checks.length, hasLength, "Pelo menos 8 caracteres");
+      updateCheck(checks.uppercase, hasUppercase, "Letra maiúscula");
+      updateCheck(checks.lowercase, hasLowercase, "Letra minúscula");
+      updateCheck(checks.number, hasNumber, "Número");
+      updateCheck(checks.symbol, hasSymbol, "Símbolo especial");
+
+      if (hasLength) score++;
+      if (hasUppercase) score++;
+      if (hasLowercase) score++;
+      if (hasNumber) score++;
+      if (hasSymbol) score++;
+
+      const percentage = (score / 5) * 100;
+      barFill.style.width = percentage + "%";
+
+      if (password.length === 0) {
+        barFill.style.width = "0%";
+        barFill.style.background = "#ef4444";
+        strengthText.textContent = "Nenhuma";
+        result.textContent = "Digite uma senha para iniciar a análise.";
+        return;
+      }
+
+      if (score <= 2) {
+        barFill.style.background = "#ef4444";
+        strengthText.textContent = "Fraca";
+        result.textContent = "Senha fraca. Adicione mais caracteres, números e símbolos.";
+      } else if (score === 3 || score === 4) {
+        barFill.style.background = "#f59e0b";
+        strengthText.textContent = "Média";
+        result.textContent = "Senha razoável, mas ainda pode ser melhorada.";
+      } else {
+        barFill.style.background = "#22c55e";
+        strengthText.textContent = "Forte";
+        result.textContent = "Senha forte. Boa combinação de segurança.";
+      }
+    }
+
+    function updateCheck(element, condition, text) {
+      if (condition) {
+        element.className = "item valid";
+        element.textContent = "✅ " + text;
+      } else {
+        element.className = "item invalid";
+        element.textContent = "❌ " + text;
+      }
+    }
+
+    function togglePassword() {
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+      } else {
+        passwordInput.type = "password";
+      }
+    }
+  </script>
+
+</body>
+</html>
