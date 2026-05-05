@@ -37,7 +37,7 @@ Atualmente desenvolvendo projetos com:
 ## 🛠️ Tecnologias
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,PHP,python,sqlite" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,php,python,sqlite" />
 </p>
 
 <p align="center">
