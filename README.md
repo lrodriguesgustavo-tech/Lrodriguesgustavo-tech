@@ -63,7 +63,7 @@ Atualmente desenvolvendo projetos com:
 - Sistema de cadastro de clientes  
 - Página de portfólio profissional  
 - Checklist de segurança digital  
-- Sistema financeiro com HTML, CSS e JavaScript  
+- Verificador de Senha Segura HTML, CSS e JavaScript  
 
 ---
 
