@@ -26,7 +26,8 @@ Atualmente desenvolvendo projetos com:
 
 - HTML • CSS • JavaScript  
 - Python  
-- SQL  
+- SQL
+-PHP
 - Segurança da Informação  
 
 🎯 Objetivo: conquistar minha primeira oportunidade na área de tecnologia e evoluir constantemente.
@@ -36,7 +37,7 @@ Atualmente desenvolvendo projetos com:
 ## 🛠️ Tecnologias
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,python,sqlite" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,PHP,python,sqlite" />
 </p>
 
 <p align="center">
